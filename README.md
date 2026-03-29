@@ -23,6 +23,9 @@ renewables. Data was cleaned using Python and visualised in Qlik Sense.
 - **Source:** https://ourworldindata.org/energy
 - **File:** owid-energy-data.csv
 - **Period:** 2000 – 2022
+- **Note:** Dataset extends to 2025 however analysis is limited to 2022
+  to ensure GDP data completeness, as GDP figures for 2023–2025 are
+  incomplete in the dataset.
 - **Description:** This dataset contains country-level energy data
   including renewable electricity generation, solar, wind, hydro,
   GDP, population, and renewable share metrics across all major economies.
