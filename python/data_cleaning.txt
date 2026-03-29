@@ -1,0 +1,58 @@
+
+# Global Renewable Energy Trends -- Data Cleaning
+# Author: Lawrence Kipchirchir
+# Tool: Python (Google Colab)
+# Source: Our World in Data -- Energy Dataset
+
+
+
+# 1. Importing Libraries
+import pandas as pd
+pd.set_option('display.max_columns', None)
+pd.set_option('display.max_rows', 100)
+
+
+# 2. Loading Dataset
+url = "https://raw.githubusercontent.com/owid/energy-data/refs/heads/master/owid-energy-data.csv"
+df = pd.read_csv(url)
+df
+
+
+# 3. Exploratory Data Analysis
+df.info()
+df.describe()
+df.isna().sum()
+
+
+# 4. Selecting Relevant Columns
+renewable_cols = [
+    "country", "year", "iso_code", "population", "gdp",
+    "renewables_electricity", "renewables_share_elec",
+    "renewables_consumption", "renewables_share_energy",
+    "solar_electricity", "solar_share_elec",
+    "wind_electricity", "wind_share_elec",
+    "hydro_electricity", "hydro_share_elec"
+]
+
+df_renew = df[renewable_cols]
+
+
+# 5. Cleaning the Data
+# Dropping rows where renewable electricity is missing
+df_renew = df_renew.dropna(subset=["renewables_electricity"], how="all")
+
+# Keeping only country-level rows (removing regional aggregates)
+df_renew = df_renew[df_renew["iso_code"].notna()]
+
+# Filtering to modern era (2000 onwards)
+df_renew = df_renew[df_renew["year"] >= 2000]
+
+
+# 6. Validating Cleaned Data
+df_renew.isna().sum()
+df_renew.describe()
+df_renew.info()
+
+
+# 7. Exporting Cleaned Dataset
+df_renew.to_csv('Renewable energy 2000-2025.csv', index=False)
