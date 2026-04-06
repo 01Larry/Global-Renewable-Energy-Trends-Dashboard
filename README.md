@@ -19,7 +19,7 @@ growth, and understand the energy mix driving the global transition to
 renewables. Data was cleaned using Python and visualised in Qlik Sense.
 
 ## Data Source
-- **Dataset:** Our World in Data — Energy Dataset
+- **Dataset:** Our World in Data - Energy Dataset
 - **Source:** https://ourworldindata.org/energy
 - **File:** owid-energy-data.csv
 - **Period:** 2000 – 2022
@@ -31,8 +31,8 @@ renewables. Data was cleaned using Python and visualised in Qlik Sense.
   GDP, population, and renewable share metrics across all major economies.
 
 ## Tools
-- **Python (Jupyter Notebook)** — Data cleaning and exploratory data analysis
-- **Qlik Sense** — Interactive dashboard and visualisation
+- **Python (Jupyter Notebook)** - Data cleaning and exploratory data analysis
+- **Qlik Sense** - Interactive dashboard and visualisation
 
 ## Data Cleaning (Python)
 - Loaded raw CSV and inspected shape, nulls and data types
@@ -46,26 +46,26 @@ renewables. Data was cleaned using Python and visualised in Qlik Sense.
 ## Dashboard Sheets
 
 ### 1. Global Overview
-- **Renewables 2022** — 8,517.14 TWh total global renewable electricity
-- **YoY Growth** — 7.2% year-on-year growth in renewable electricity
-- **Avg Renewable Share** — 36.1% average share of renewables in energy mix
-- **Hydro Electricity 2022** — 4,322 TWh
-- **Wind Electricity 2022** — 2,107 TWh
-- **Solar Electricity 2022** — 1,330 TWh
-- **Renewable Energy Trend** — line chart showing steady growth from
+- **Renewables 2022** - 8,517.14 TWh total global renewable electricity
+- **YoY Growth** - 7.2% year-on-year growth in renewable electricity
+- **Avg Renewable Share** - 36.1% average share of renewables in energy mix
+- **Hydro Electricity 2022** - 4,322 TWh
+- **Wind Electricity 2022** - 2,107 TWh
+- **Solar Electricity 2022** - 1,330 TWh
+- **Renewable Energy Trend** - line chart showing steady growth from
   2.86k TWh in 2000 to 8.52k TWh in 2022
 
 ### 2. Country Analysis
-- **GDP vs Renewable Energy Consumption** — scatter plot comparing
+- **GDP vs Renewable Energy Consumption** - scatter plot comparing
   economic size against renewable output per country
-- **Top 10 Countries by Renewable Electricity** — China leads at
+- **Top 10 Countries by Renewable Electricity** - China leads at
   2,678.66 TWh followed by the United States at 958.14 TWh
-- **Energy Mix Drivers** — stacked bar chart breaking down wind,
+- **Energy Mix Drivers** - stacked bar chart breaking down wind,
   solar and hydro contributions per country
 
 ## Results
 - Global renewable electricity grew from 2,860 TWh in 2000 to
-  8,520 TWh in 2022 — nearly tripling over 22 years
+  8,520 TWh in 2022 - nearly tripling over 22 years
 - China is the world's largest renewable energy producer at 2,678 TWh,
   driven primarily by hydro (1,298 TWh) and wind (763 TWh)
 - Solar electricity grew the fastest, becoming a significant contributor
